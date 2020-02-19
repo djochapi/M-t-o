@@ -1,0 +1,89 @@
+header>p>img
+{
+    float: left;
+}
+
+h2
+{
+    min-width:400px;
+    margin-bottom: -4px; 
+}
+
+header
+{
+    position: relative;
+    max-width: 90%;
+    border-bottom: 2px solid black; 
+
+}
+
+
+#nb
+{
+    font-size: 2.3em;
+    float: left;
+}
+
+#prec
+{
+    margin-left: 60%;
+    min-width: 180px;
+}
+
+sup
+{
+    float: left;
+}
+
+article
+{
+    position: relative;
+    max-width: 90%;
+    border-bottom: 2px solid black;
+}
+
+section
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+article>section>p
+{
+    display: inline-block;
+    width: 10%;
+}
+
+article>section>p:first-child
+{
+    font-weight: bold;
+}
+
+@media screen and (min-width:920px)
+{
+    article>section>p
+    {
+        display: block;
+    }
+    section
+    {
+        display:block;
+    }
+    article
+    {
+        border: none;
+        float: left;
+    }
+    header
+    {
+        border: none;   
+    }
+
+    body>article:nth-child(2), body>article:nth-child(3), body>article:nth-child(4), body>article:nth-child(5), body>article:nth-child(6), body>article:nth-child(7), body>article:nth-child(8)
+    {
+        margin-left:6%;
+    }
+}
